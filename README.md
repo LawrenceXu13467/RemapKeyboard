@@ -41,6 +41,23 @@ You can also reset the original layout:
 hidutil property --set '{"UserKeyMapping":[]}'
 ```
 
+### Update:
+You can also write a shell script with the above command and name it 'rmp.sh'.
+Use the Automator, 'Application' -> 'Run Shell Script'.
+On the right side, write:
+```
+#!/bin/bash
+cd ~
+./rmp.sh
+```
+Run and test it. Save it in the 'Application' folder.     
+
+Open 'System Preferences' -> 'Users and Groups'
+Click on the current user -> 'Login Items'
+Click '+' to add our script application into the list.
+Next time, when we boot the machine, the remapping would be done automatically.
+
+
 ### KEY CODE
 Keyboard a and A
 
