@@ -1,15 +1,22 @@
 # RemapKeyboard
+
+### [https://lawrencexu13467.github.io/RemapKeyboard](https://lawrencexu13467.github.io/RemapKeyboard)
+
+
 ```
-This method has been successfully tested on a MacBook Pro late 2011 model running OS X 10.12.6, 
+This method has been successfully tested on a MacBook Pro 
+late 2011 model running OS X 10.12.6, 
 and can be applied to other machines as well.
 ```
 ```
-Generally, Apple Service Providers need to replace the entire topcase 
-if there are failures regarding the keyboard or trackpad. (Usually around $300)
-No need to worry, if that's not accidental damage and your device is covered 
-by Apple Care or other warranties.
-However, for 'Out of Warranty' devices, instead of using an external keyboard or 
-spending that much money on a topcase replacement, it might be helpful to swap and 
+Generally, Apple Service Providers need to 
+replace the entire topcase if there are failures 
+regarding the keyboard or trackpad. (Usually around $300)
+No need to worry if that's not accidental damage, and 
+your device is covered by Apple Care or other warranties.
+However, for 'Out of Warranty' devices, instead of 
+using an external keyboard or spending that much money 
+on a topcase replacement, it might be helpful to swap and 
 remap the keys.
 ```
 
@@ -42,7 +49,8 @@ hidutil property --set '{"UserKeyMapping":[]}'
 ```
 
 ### Update:
-You can also write a shell script with the above command and name it 'rmp.sh'.
+You can also write a shell script with the 
+above command and name it 'rmp.sh'.
 Use the Automator, 'Application' -> 'Run Shell Script'.
 On the right side, write:
 ```
@@ -55,10 +63,12 @@ Run and test it. Save it in the 'Application' folder.
 Open 'System Preferences' -> 'Users and Groups'
 Click on the current user -> 'Login Items'
 Click '+' to add our script application into the list.
-Next time, when we boot the machine, the remapping would be done automatically.
+Next time, when we boot the machine, the remapping 
+would be done automatically.
 
 
 ### KEY CODE
+```
 Keyboard a and A
 
 0x04
@@ -538,5 +548,5 @@ Keypad 5
 Keyboard Right GUI
 
 0xE7
-
+```
 
